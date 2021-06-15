@@ -21,7 +21,7 @@ const store = createStore(
   countReducer,
   // ! 课后补充： combineReducers用法
   // combineReducers({home: countReducer}),
-  applyMiddleware(thunk)
+  applyMiddleware(thunk,logger,promise)
 );
 
 export default store;
